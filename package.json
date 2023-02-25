@@ -1,15 +1,19 @@
 {
 	"scripts": {
-		"build": "node -r ts-node/register ./node_modules/webpack/bin/webpack.js",
+		"build": "webpack",
 		"watch": "npm run build -- --watch"
 	},
 	"dependencies": {
-		"@alt1/base": "^1.0.0-alpha.2"
+		"@alt1/base": "^1.0.0-alpha.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
 		"@alt1/imagedata-loader": "^1.0.0-alpha.2",
 		"@alt1/webpack": "^1.0.0-alpha.2",
 		"@types/node": "^12.12.54",
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.11",
 		"@types/webpack": "^5.28.0",
 		"file-loader": "^5.1.0",
 		"json-loader": "^0.5.7",
