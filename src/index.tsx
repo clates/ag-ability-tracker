@@ -23,18 +23,18 @@ var imgs = a1lib.ImageDetect.webpackImages({
 a1lib.PasteInput.listen(img => {
   findHomeport(img);
 }, (err, errid) => {
-  output.insertAdjacentHTML("beforeend", `<div><b>${errid}</b>  ${err}</div>`);
+  // output.insertAdjacentHTML("beforeend", `<div><b>${errid}</b>  ${err}</div>`);
 });
 
 //You can reach exports on window.TEST because of
 //config.makeUmd("testpackage", "TEST"); in webpack.config.ts
 export function capture() {
   if (!window.alt1) {
-    output.insertAdjacentHTML("beforeend", `<div>You need to run this page in alt1 to capture the screen</div>`);
+    // output.insertAdjacentHTML("beforeend", `<div>You need to run this page in alt1 to capture the screen</div>`);
     return;
   }
   if (!alt1.permissionPixel) {
-    output.insertAdjacentHTML("beforeend", `<div>Page is not installed as app or capture permission is not enabled</div>`);
+    // output.insertAdjacentHTML("beforeend", `<div>Page is not installed as app or capture permission is not enabled</div>`);
     return;
   }
   var img = a1lib.captureHoldFullRs();
@@ -44,7 +44,7 @@ export function capture() {
 
 function findHomeport(img: ImgRef) {
   var loc = img.findSubimage(imgs.homeport);
-  output.insertAdjacentHTML("beforeend", `<div>homeport matches: ${JSON.stringify(loc)}</div>`);
+  // output.insertAdjacentHTML("beforeend", `<div>homeport matches: ${JSON.stringify(loc)}</div>`);
 
   //overlay the result on screen if running in alt1
   if (window.alt1) {
@@ -63,10 +63,10 @@ function findHomeport(img: ImgRef) {
 //print text world
 //also the worst possible example of how to use global exposed exports as described in webpack.config.json
 
-output.insertAdjacentHTML("beforeend", `
-	<div>paste an image of rs with homeport button (or not)</div>
-	<div onclick='TEST.capture()'>Click to capture if on alt1</div>`
-);
+// output.insertAdjacentHTML("beforeend", `
+// 	<div>paste an image of rs with homeport button (or not)</div>
+// 	<div onclick='TEST.capture()'>Click to capture if on alt1</div>`
+// );
 
 //check if we are running inside alt1 by checking if the alt1 global exists
 if (window.alt1) {
@@ -84,7 +84,7 @@ var imgref = a1lib.capture(300, 500, 400, 400);
 var imagebuffer = imgref.toDrawableData();
 
 // Show the image by adding it to the DOM (for debugging)
-imagebuffer.show();
+// imagebuffer.show();
 
 import * as React from "react";
 import { createRoot } from 'react-dom/client';
