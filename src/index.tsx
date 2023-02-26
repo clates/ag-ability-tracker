@@ -7,7 +7,6 @@ import { ImgRef } from "@alt1/base";
 require("!file-loader?name=[name].[ext]!./index.html");
 require("!file-loader?name=[name].[ext]!./appconfig.json");
 
-
 var output = document.getElementById("output");
 
 //loads all images as raw pixel data async, images have to be saved as *.data.png
@@ -16,15 +15,18 @@ var output = document.getElementById("output");
 //this function is async, so you cant acccess the images instantly but generally takes <20ms
 //use `await imgs.promise` if you want to use the images as soon as they are loaded
 var imgs = a1lib.ImageDetect.webpackImages({
-  homeport: require("./homebutton.data.png")
+  homeport: require("./homebutton.data.png"),
 });
 
 //listen for pasted (ctrl-v) images, usually used in the browser version of an app
-a1lib.PasteInput.listen(img => {
-  findHomeport(img);
-}, (err, errid) => {
-  // output.insertAdjacentHTML("beforeend", `<div><b>${errid}</b>  ${err}</div>`);
-});
+a1lib.PasteInput.listen(
+  (img) => {
+    findHomeport(img);
+  },
+  (err, errid) => {
+    // output.insertAdjacentHTML("beforeend", `<div><b>${errid}</b>  ${err}</div>`);
+  }
+);
 
 //You can reach exports on window.TEST because of
 //config.makeUmd("testpackage", "TEST"); in webpack.config.ts
@@ -49,9 +51,27 @@ function findHomeport(img: ImgRef) {
   //overlay the result on screen if running in alt1
   if (window.alt1) {
     if (loc.length != 0) {
-      alt1.overLayRect(a1lib.mixColor(255, 255, 255), loc[0].x, loc[0].y, imgs.homeport.width, imgs.homeport.height, 2000, 3);
+      alt1.overLayRect(
+        a1lib.mixColor(255, 255, 255),
+        loc[0].x,
+        loc[0].y,
+        imgs.homeport.width,
+        imgs.homeport.height,
+        2000,
+        3
+      );
     } else {
-      alt1.overLayTextEx("Couldn't find homeport button", a1lib.mixColor(255, 255, 255), 20, Math.round(alt1.rsWidth / 2), 200, 2000, "", true, true);
+      alt1.overLayTextEx(
+        "Couldn't find homeport button",
+        a1lib.mixColor(255, 255, 255),
+        20,
+        Math.round(alt1.rsWidth / 2),
+        200,
+        2000,
+        "",
+        true,
+        true
+      );
     }
   }
 
@@ -76,7 +96,6 @@ if (window.alt1) {
   alt1.identifyAppUrl("./appconfig.json");
 }
 
-
 // Captures a 400x400 rectangle starting at position 100,100 from the top-left of the game area
 // imgref now contains a reference to the image (in this case still in Alt1 memory)
 var imgref = a1lib.capture(300, 500, 400, 400);
@@ -87,7 +106,7 @@ var imagebuffer = imgref.toDrawableData();
 // imagebuffer.show();
 
 import * as React from "react";
-import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
 import { App } from "./App";
-const root = createRoot(document.getElementById('root'))
-root.render(<App />)
+const root = createRoot(document.getElementById("root"));
+root.render(<App />);

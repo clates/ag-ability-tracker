@@ -1,16 +1,15 @@
-
 export enum Ability {
   Flurry,
   ExposedCore,
   Minions,
   Pillars,
-  Cannon
+  Cannon,
 }
 
 export type AbilityLineFragment = {
-  ability: Ability,
-  fragment: string
-}
+  ability: Ability;
+  fragment: string;
+};
 
 /**
  * Ariane: Get out of there!
@@ -25,11 +24,11 @@ export const coreLineFragments = [
   "Ariane: Smash your way",
   "Azzanadra: Destroy the arms",
   "Azzanadra: Break through",
-  "Azzanadra: Sunder the arms"
-]
+  "Azzanadra: Sunder the arms",
+];
 
 /**
- * 
+ *
  */
 export const minionLineFragments = [
   "Ariane: It's summoning",
@@ -38,8 +37,8 @@ export const minionLineFragments = [
   "Azzanadra: Your attacks",
   "Azzanadra: They give their",
   "Ariane: These glacytes",
-  "Ariane: It uses energy"
-]
+  "Ariane: It uses energy",
+];
 
 /**
  * Azzanadra: Run, World Guardian!
@@ -54,8 +53,8 @@ export const pillarLineFragments = [
   "Azzanadra: The air grows",
   "Ariane: Move",
   "Azzanadra: Move!",
-  "Ariane: Dodge the ice"
-]
+  "Ariane: Dodge the ice",
+];
 
 /**
  * Ariane: It's that giant beam...
@@ -71,10 +70,8 @@ export const cannonLineFragments = [
   "Azzanadra: Ready your",
   "Azzanadra: Steel",
   "Ariane: It's charging!",
-  "Azzanadra: Brace yourse"
-]
-
-
+  "Azzanadra: Brace yourse",
+];
 
 /**
   // Azzanadra: Prepare for a barrage!
@@ -92,7 +89,7 @@ export const flurryLineFragments = [
   "Ariane: Faster",
   "Ariane: React to",
   "Ariane: It's changing",
-  "Ariane: It's switching"]
+  "Ariane: It's switching",
+];
 
-
-export const AGDeadLines = ["received:", "charming imp", "Completion Time:"]
+export const AGDeadLines = ["received:", "charming imp", "Completion Time:"];
