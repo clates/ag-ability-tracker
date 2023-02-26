@@ -70,10 +70,24 @@
         -webkit-filter: brightness(1.2);
         filter: brightness(1.2);
       }
+
+      @keyframes warningGlow {
+        from {
+          background-color: #171e24;
+        }
+
+        to {
+          background-color: #dd3d3d;
+        }
+      }
+
+      .applyWarningGlow {
+        animation: 2s infinite alternate warningGlow;
+      }
     </style>
   </head>
 
-  <body style="background-color: #171e24">
+  <body>
     <div id="root"></div>
     <!-- <div id="output"></div> -->
     <script src="./index.bundle.js"></script>

@@ -4119,6 +4119,21 @@ eval("module.exports = {\"chars\":[{\"width\":13,\"bonus\":455,\"chr\":\"a\",\"p
 
 /***/ }),
 
+/***/ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/wenbook.png":
+/*!**********************************************************************************************!*\
+  !*** ../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/wenbook.png ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "/assets/wenbook.png");
+
+/***/ }),
+
 /***/ "../node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./appconfig.json":
 /*!**********************************************************************************!*\
   !*** ../node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./appconfig.json ***!
@@ -37543,6 +37558,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _abilityLineMap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./abilityLineMap */ "./abilityLineMap.ts");
 /* harmony import */ var _useChat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useChat */ "./useChat.tsx");
+/* harmony import */ var _alt1_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @alt1/base */ "../node_modules/@alt1/base/dist/index.js");
+
 
 
 
@@ -37562,6 +37579,12 @@ const App = () => {
     const chatContainsPillarsAlert = chatContainsAFragment([...chat], ..._abilityLineMap__WEBPACK_IMPORTED_MODULE_1__.pillarLineFragments);
     const chatContainsCannonAlert = chatContainsAFragment([...chat], ..._abilityLineMap__WEBPACK_IMPORTED_MODULE_1__.cannonLineFragments);
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        //One time linking to the alt-1 press
+        _alt1_base__WEBPACK_IMPORTED_MODULE_3__.on("alt1pressed", () => {
+            resetLines();
+        });
+    }, []);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
         //Congrats we've killed AG; reset everything
         if ([...chat].some((line) => _abilityLineMap__WEBPACK_IMPORTED_MODULE_1__.AGDeadLines.some((agDeadFragment) => line.includes(agDeadFragment)))) {
             console.log("AG Completed! Resetting the lines.");
@@ -37577,31 +37600,50 @@ const App = () => {
             resetLines();
         }
     }, [chat]);
+    console.debug("Current Chat:", chat);
+    //Handle the double cannon warning
     const cannonIsLastAbility = chatContainsCoreAlert &&
         chatContainsMinionsAlert &&
         chatContainsPillarsAlert &&
         chatContainsFlurryAlert &&
         !chatContainsCannonAlert;
-    console.log("Current Chat:", chat);
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "text-3xl font-bold underline w-screen h-screen overflow-hidden" },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "container grid grid-cols-5 gap-2 mx-auto" },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "w-full rounded" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { style: getStyles(chatContainsFlurryAlert), src: __webpack_require__(/*! ./assets/flurry.png */ "./assets/flurry.png") })),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "w-full rounded" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { style: getStyles(chatContainsPillarsAlert), src: __webpack_require__(/*! ./assets/pillars.png */ "./assets/pillars.png") })),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "w-full rounded" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { style: getStyles(chatContainsCoreAlert), src: __webpack_require__(/*! ./assets/core.png */ "./assets/core.png") })),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "w-full rounded" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { style: getStyles(chatContainsCannonAlert), className: cannonIsLastAbility ? "animate-pulse" : "", src: __webpack_require__(/*! ./assets/cannon.png */ "./assets/cannon.png") })),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "w-full rounded" },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { style: getStyles(chatContainsMinionsAlert), src: __webpack_require__(/*! ./assets/minions.png */ "./assets/minions.png") }))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "my-2 text-center w-full flex flex-row justify-center " },
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (cannonIsLastAbility && alt1.permissionOverlay) {
+            alt1.setTooltip("Double Cannon Warning!");
+        }
+        alt1.clearTooltip();
+    }, [cannonIsLastAbility]);
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `text-3xl font-bold underline w-screen h-screen overflow-hidden bg-[#171e24] ${cannonIsLastAbility ? "applyWarningGlow" : ""}` },
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "container grid grid-cols-5 gap-2 mx-auto" }, [
+            {
+                alert: chatContainsFlurryAlert,
+                image: __webpack_require__(/*! ./assets/flurry.png */ "./assets/flurry.png"),
+            },
+            {
+                alert: chatContainsPillarsAlert,
+                image: __webpack_require__(/*! ./assets/pillars.png */ "./assets/pillars.png"),
+            },
+            {
+                alert: chatContainsCoreAlert,
+                image: __webpack_require__(/*! ./assets/core.png */ "./assets/core.png"),
+            },
+            {
+                alert: chatContainsCannonAlert,
+                image: __webpack_require__(/*! ./assets/cannon.png */ "./assets/cannon.png"),
+            },
+            {
+                alert: chatContainsMinionsAlert,
+                image: __webpack_require__(/*! ./assets/minions.png */ "./assets/minions.png"),
+            },
+        ].map(({ alert, image }) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "w-full rounded", key: image },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { style: getStyles(alert), src: image }))))),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "my-0.5 text-center w-full flex flex-row justify-center min-[200px]:my-2" },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: "nisbutton overflow-hidden", onClick: () => resetLines() },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: "px-2" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: "px-0.5 text-xs min-[200px]:text-sm min-[200px]:px-2" },
                     "Reset",
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", { className: "hidden min-[240px]:visible" }),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", { className: "inline min-[240px]:hidden" }),
                     " the rotation",
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", { className: "hidden min-[320px]:visible" }),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", { className: "inline min-[320px]:hidden" }),
                     " (alt+1)")))));
 };
 
@@ -37674,6 +37716,7 @@ const pillarLineFragments = [
     "Ariane: Move",
     "Azzanadra: Move!",
     "Ariane: Dodge the ice",
+    "Ariane: The air grows colder",
 ];
 /**
  * Ariane: It's that giant beam...
@@ -37993,6 +38036,7 @@ __webpack_require__.r(__webpack_exports__);
 //tell webpack to add index.html and appconfig.json to output
 __webpack_require__(/*! !file-loader?name=[name].[ext]!./index.html */ "../node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./index.html");
 __webpack_require__(/*! !file-loader?name=[name].[ext]!./appconfig.json */ "../node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./appconfig.json");
+__webpack_require__(/*! !file-loader?name=/assets/[name].[ext]!./assets/wenbook.png */ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/wenbook.png");
 var output = document.getElementById("output");
 //loads all images as raw pixel data async, images have to be saved as *.data.png
 //this also takes care of metadata headers in the image that make browser load the image
