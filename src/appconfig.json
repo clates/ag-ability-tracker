@@ -3,14 +3,14 @@
   "description": "An overlay that shows the arch glacor moveset during combat.",
   "appUrl": "./index.html",
   "configUrl": "./appconfig.json",
-  "iconUrl": "https://runescape.wiki/images/Arch-Glacor.png?ac3e5",
+  "iconUrl": "./assets/wenbook.png",
   "defaultWidth": 250,
-  "defaultHeight": 120,
-  "minWidth": 250,
-  "minHeight": 80,
+  "defaultHeight": 95,
+  "minWidth": 150,
+  "minHeight": 45,
   "maxWidth": 1000,
   "maxHeight": 1000,
   "requestHandlers": [],
   "activators": [],
-  "permissions": "pixel"
+  "permissions": "pixel,gamestate,overlay"
 }

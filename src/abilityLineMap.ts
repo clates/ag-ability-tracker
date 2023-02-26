@@ -54,6 +54,7 @@ export const pillarLineFragments = [
   "Ariane: Move",
   "Azzanadra: Move!",
   "Ariane: Dodge the ice",
+  "Ariane: The air grows colder",
 ];
 
 /**

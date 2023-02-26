@@ -6,6 +6,7 @@ import { ImgRef } from "@alt1/base";
 //tell webpack to add index.html and appconfig.json to output
 require("!file-loader?name=[name].[ext]!./index.html");
 require("!file-loader?name=[name].[ext]!./appconfig.json");
+require("!file-loader?name=/assets/[name].[ext]!./assets/wenbook.png");
 
 var output = document.getElementById("output");
 

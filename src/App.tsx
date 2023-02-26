@@ -9,6 +9,7 @@ import {
   pillarLineFragments,
 } from "./abilityLineMap";
 import useChat from "./useChat";
+import * as a1lib from "@alt1/base";
 
 const chatContainsAFragment = (
   chat: string[],
@@ -49,6 +50,13 @@ export const App: React.FC = () => {
   );
 
   useEffect(() => {
+    //One time linking to the alt-1 press
+    a1lib.on("alt1pressed", () => {
+      resetLines();
+    });
+  }, []);
+
+  useEffect(() => {
     //Congrats we've killed AG; reset everything
     if (
       [...chat].some((line) =>
@@ -72,59 +80,65 @@ export const App: React.FC = () => {
     }
   }, [chat]);
 
+  console.debug("Current Chat:", chat);
+
+  //Handle the double cannon warning
   const cannonIsLastAbility =
     chatContainsCoreAlert &&
     chatContainsMinionsAlert &&
     chatContainsPillarsAlert &&
     chatContainsFlurryAlert &&
     !chatContainsCannonAlert;
-
-  console.log("Current Chat:", chat);
+  useEffect(() => {
+    if (cannonIsLastAbility && alt1.permissionOverlay) {
+      alt1.setTooltip("Double Cannon Warning!");
+    }
+    alt1.clearTooltip();
+  }, [cannonIsLastAbility]);
 
   return (
-    <div className="text-3xl font-bold underline w-screen h-screen overflow-hidden">
+    <div
+      className={`text-3xl font-bold underline w-screen h-screen overflow-hidden bg-[#171e24] ${
+        cannonIsLastAbility ? "applyWarningGlow" : ""
+      }`}
+    >
       <div className="container grid grid-cols-5 gap-2 mx-auto">
-        <div className="w-full rounded">
-          <img
-            style={getStyles(chatContainsFlurryAlert)}
-            src={require("./assets/flurry.png")}
-          ></img>
-        </div>
-        <div className="w-full rounded">
-          <img
-            style={getStyles(chatContainsPillarsAlert)}
-            src={require("./assets/pillars.png")}
-          ></img>
-        </div>
-        <div className="w-full rounded">
-          <img
-            style={getStyles(chatContainsCoreAlert)}
-            src={require("./assets/core.png")}
-          ></img>
-        </div>
-        <div className="w-full rounded">
-          <img
-            style={getStyles(chatContainsCannonAlert)}
-            className={cannonIsLastAbility ? "animate-pulse" : ""}
-            src={require("./assets/cannon.png")}
-          ></img>
-        </div>
-        <div className="w-full rounded">
-          <img
-            style={getStyles(chatContainsMinionsAlert)}
-            src={require("./assets/minions.png")}
-          ></img>
-        </div>
+        {[
+          {
+            alert: chatContainsFlurryAlert,
+            image: require("./assets/flurry.png"),
+          },
+          {
+            alert: chatContainsPillarsAlert,
+            image: require("./assets/pillars.png"),
+          },
+          {
+            alert: chatContainsCoreAlert,
+            image: require("./assets/core.png"),
+          },
+          {
+            alert: chatContainsCannonAlert,
+            image: require("./assets/cannon.png"),
+          },
+          {
+            alert: chatContainsMinionsAlert,
+            image: require("./assets/minions.png"),
+          },
+        ].map(({ alert, image }) => (
+          <div className="w-full rounded" key={image}>
+            <img style={getStyles(alert)} src={image}></img>
+          </div>
+        ))}
       </div>
-      <div className="my-2 text-center w-full flex flex-row justify-center ">
+      <div className="my-0.5 text-center w-full flex flex-row justify-center min-[200px]:my-2">
         <button
           className="nisbutton overflow-hidden"
           onClick={() => resetLines()}
         >
-          <span className="px-2">
+          <span className="px-0.5 text-xs min-[200px]:text-sm min-[200px]:px-2">
             Reset
-            <br className="hidden min-[240px]:visible" /> the rotation
-            <br className="hidden min-[320px]:visible" /> (alt+1)
+            <br className="inline min-[240px]:hidden" /> the rotation
+            <br className="inline min-[320px]:hidden" /> (alt+1)
           </span>
         </button>
       </div>
