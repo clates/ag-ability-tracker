@@ -37701,17 +37701,20 @@ const App = () => {
         }
         alt1.clearTooltip();
     }, [cannonIsLastAbility]);
-    const rewards = [
-        __webpack_require__(/*! ./assets/frozenCoreOfLeng.png */ "./assets/frozenCoreOfLeng.png"),
-        __webpack_require__(/*! ./assets/darkNilas.png */ "./assets/darkNilas.png"),
-        __webpack_require__(/*! ./assets/glacorCore.png */ "./assets/glacorCore.png"),
-        __webpack_require__(/*! ./assets/lengArtefact.png */ "./assets/lengArtefact.png"),
-    ];
+    const rewardImage = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
+        const possibleRewards = [
+            __webpack_require__(/*! ./assets/frozenCoreOfLeng.png */ "./assets/frozenCoreOfLeng.png"),
+            __webpack_require__(/*! ./assets/darkNilas.png */ "./assets/darkNilas.png"),
+            __webpack_require__(/*! ./assets/glacorCore.png */ "./assets/glacorCore.png"),
+            __webpack_require__(/*! ./assets/lengArtefact.png */ "./assets/lengArtefact.png"),
+        ];
+        return possibleRewards[Math.floor(Math.random() * possibleRewards.length)];
+    }, [inBossEncounter]);
     console.log("inBossEncounter:", inBossEncounter);
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `text-white text-xs min-[240px]:text-sm fixed w-screen h-screen flex justify-center items-center bg-gray-900 transition-opacity duration-700 flex space-x-0.5 z-20 p-3  ${inPostKill ? "opacity-90" : "opacity-0"}` },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Great kill!"),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { className: "h-4/5 ml-3", src: rewards[Math.floor(Math.random() * rewards.length)] })),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { className: "h-4/5 ml-3", src: rewardImage })),
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `text-white text-xs min-[240px]:text-sm fixed w-screen h-screen flex justify-center items-center bg-gray-900 duration-1000 flex space-x-0.5 z-10 p-3 ${inBossEncounter || inPostKill ? "opacity-0" : "opacity-90"}` },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { className: "w-2/3 mr-3", src: __webpack_require__(/*! ./assets/archGlacor.png */ "./assets/archGlacor.png") }),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Waiting for boss to spawn...")),
@@ -38027,7 +38030,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log("Chilling out on checking for hoary");
         setTimeout(() => {
             setActiveInterval(startInterval());
-        }, 10000);
+        }, 30000);
     }, [activeInterval]);
     return [imageDetected, chillOut];
 });
