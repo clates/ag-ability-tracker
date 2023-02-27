@@ -2880,6 +2880,16 @@ let defaultbackwardnudges = [
 
 /***/ }),
 
+/***/ "./assets/hoaryChill.data.png":
+/*!************************************!*\
+  !*** ./assets/hoaryChill.data.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports=(__webpack_require__(/*! @alt1/base */ "../node_modules/@alt1/base/dist/index.js").ImageDetect.imageDataFromBase64)("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")
+
+/***/ }),
+
 /***/ "./homebutton.data.png":
 /*!*****************************!*\
   !*** ./homebutton.data.png ***!
@@ -4116,6 +4126,66 @@ eval("module.exports = {\"chars\":[{\"width\":13,\"bonus\":455,\"chr\":\"a\",\"p
 /******/ })()
 ;
 });
+
+/***/ }),
+
+/***/ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/darkNilas.png":
+/*!************************************************************************************************!*\
+  !*** ../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/darkNilas.png ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "/assets/darkNilas.png");
+
+/***/ }),
+
+/***/ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/frozenCoreOfLeng.png":
+/*!*******************************************************************************************************!*\
+  !*** ../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/frozenCoreOfLeng.png ***!
+  \*******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "/assets/frozenCoreOfLeng.png");
+
+/***/ }),
+
+/***/ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/glacorCore.png":
+/*!*************************************************************************************************!*\
+  !*** ../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/glacorCore.png ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "/assets/glacorCore.png");
+
+/***/ }),
+
+/***/ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/lengArtefact.png":
+/*!***************************************************************************************************!*\
+  !*** ../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/lengArtefact.png ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "/assets/lengArtefact.png");
 
 /***/ }),
 
@@ -37559,6 +37629,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _abilityLineMap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./abilityLineMap */ "./abilityLineMap.ts");
 /* harmony import */ var _useChat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useChat */ "./useChat.tsx");
 /* harmony import */ var _alt1_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @alt1/base */ "../node_modules/@alt1/base/dist/index.js");
+/* harmony import */ var _useImageFinder__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./useImageFinder */ "./useImageFinder.tsx");
+
 
 
 
@@ -37572,6 +37644,13 @@ const getStyles = (alert) => {
 };
 const App = () => {
     const [chat, resetLines] = (0,_useChat__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    const [hasHoaryChill, chillOut] = (0,_useImageFinder__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    const [inBossEncounter, setInBossEncounter] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+    const [inPostKill, setInPostKill] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+    const resetRotation = () => {
+        resetLines();
+        chillOut();
+    };
     //If _some_ chat message includes one of the ability line fragments, then return the ability
     const chatContainsFlurryAlert = chatContainsAFragment([...chat], ..._abilityLineMap__WEBPACK_IMPORTED_MODULE_1__.flurryLineFragments);
     const chatContainsCoreAlert = chatContainsAFragment([...chat], ..._abilityLineMap__WEBPACK_IMPORTED_MODULE_1__.coreLineFragments);
@@ -37581,28 +37660,37 @@ const App = () => {
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
         //One time linking to the alt-1 press
         _alt1_base__WEBPACK_IMPORTED_MODULE_3__.on("alt1pressed", () => {
-            resetLines();
+            resetRotation();
         });
     }, []);
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        //
+        if ([...chat].some((line) => line.includes(_abilityLineMap__WEBPACK_IMPORTED_MODULE_1__.bossStartLine))) {
+            setInBossEncounter(true);
+        }
         //Congrats we've killed AG; reset everything
         if ([...chat].some((line) => _abilityLineMap__WEBPACK_IMPORTED_MODULE_1__.AGDeadLines.some((agDeadFragment) => line.includes(agDeadFragment)))) {
             console.log("AG Completed! Resetting the lines.");
-            resetLines();
+            resetRotation();
+            setInBossEncounter(false);
+            setInPostKill(true);
+            setTimeout(() => {
+                setInPostKill(false);
+            }, 7000);
         }
         //AG Completed a rotation; reset everything and pass the latest timestamp
-        if (chatContainsCoreAlert &&
+        if ((chatContainsCoreAlert || hasHoaryChill) &&
             chatContainsMinionsAlert &&
             chatContainsPillarsAlert &&
             chatContainsFlurryAlert &&
             chatContainsCannonAlert) {
             console.log("AG rotation complete. Resetting the lines.");
-            resetLines();
+            resetRotation();
         }
     }, [chat]);
-    console.debug("Current Chat:", chat);
+    // console.debug("Current Chat:", chat);
     //Handle the double cannon warning
-    const cannonIsLastAbility = chatContainsCoreAlert &&
+    const cannonIsLastAbility = (chatContainsCoreAlert || hasHoaryChill) &&
         chatContainsMinionsAlert &&
         chatContainsPillarsAlert &&
         chatContainsFlurryAlert &&
@@ -37613,38 +37701,52 @@ const App = () => {
         }
         alt1.clearTooltip();
     }, [cannonIsLastAbility]);
-    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `text-3xl font-bold underline w-screen h-screen overflow-hidden bg-[#171e24] ${cannonIsLastAbility ? "applyWarningGlow" : ""}` },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "container grid grid-cols-5 gap-2 mx-auto" }, [
-            {
-                alert: chatContainsFlurryAlert,
-                image: __webpack_require__(/*! ./assets/flurry.png */ "./assets/flurry.png"),
-            },
-            {
-                alert: chatContainsPillarsAlert,
-                image: __webpack_require__(/*! ./assets/pillars.png */ "./assets/pillars.png"),
-            },
-            {
-                alert: chatContainsCoreAlert,
-                image: __webpack_require__(/*! ./assets/core.png */ "./assets/core.png"),
-            },
-            {
-                alert: chatContainsCannonAlert,
-                image: __webpack_require__(/*! ./assets/cannon.png */ "./assets/cannon.png"),
-            },
-            {
-                alert: chatContainsMinionsAlert,
-                image: __webpack_require__(/*! ./assets/minions.png */ "./assets/minions.png"),
-            },
-        ].map(({ alert, image }) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "w-full rounded", key: image },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { style: getStyles(alert), src: image }))))),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "my-0.5 text-center w-full flex flex-row justify-center min-[200px]:my-2" },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: "nisbutton overflow-hidden", onClick: () => resetLines() },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: "px-0.5 text-xs min-[200px]:text-sm min-[200px]:px-2" },
-                    "Reset",
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", { className: "inline min-[240px]:hidden" }),
-                    " the rotation",
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", { className: "inline min-[320px]:hidden" }),
-                    " (alt+1)")))));
+    const rewards = [
+        __webpack_require__(/*! ./assets/frozenCoreOfLeng.png */ "./assets/frozenCoreOfLeng.png"),
+        __webpack_require__(/*! ./assets/darkNilas.png */ "./assets/darkNilas.png"),
+        __webpack_require__(/*! ./assets/glacorCore.png */ "./assets/glacorCore.png"),
+        __webpack_require__(/*! ./assets/lengArtefact.png */ "./assets/lengArtefact.png"),
+    ];
+    console.log("inBossEncounter:", inBossEncounter);
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `text-white text-xs min-[240px]:text-sm fixed w-screen h-screen flex justify-center items-center bg-gray-900 transition-opacity duration-700 flex space-x-0.5 z-20 p-3  ${inPostKill ? "opacity-90" : "opacity-0"}` },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Great kill!"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { className: "h-4/5 ml-3", src: rewards[Math.floor(Math.random() * rewards.length)] })),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `text-white text-xs min-[240px]:text-sm fixed w-screen h-screen flex justify-center items-center bg-gray-900 duration-1000 flex space-x-0.5 z-10 p-3 ${inBossEncounter || inPostKill ? "opacity-0" : "opacity-90"}` },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { className: "w-2/3 mr-3", src: __webpack_require__(/*! ./assets/archGlacor.png */ "./assets/archGlacor.png") }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Waiting for boss to spawn...")),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: `text-3xl font-bold underline w-screen h-screen overflow-hidden bg-[#171e24] ${cannonIsLastAbility ? "applyWarningGlow" : ""}` },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "container grid grid-cols-5 gap-2 mx-auto" }, [
+                {
+                    alert: chatContainsFlurryAlert,
+                    image: __webpack_require__(/*! ./assets/flurry.png */ "./assets/flurry.png"),
+                },
+                {
+                    alert: chatContainsPillarsAlert,
+                    image: __webpack_require__(/*! ./assets/pillars.png */ "./assets/pillars.png"),
+                },
+                {
+                    alert: chatContainsCoreAlert || hasHoaryChill,
+                    image: __webpack_require__(/*! ./assets/core.png */ "./assets/core.png"),
+                },
+                {
+                    alert: chatContainsCannonAlert,
+                    image: __webpack_require__(/*! ./assets/cannon.png */ "./assets/cannon.png"),
+                },
+                {
+                    alert: chatContainsMinionsAlert,
+                    image: __webpack_require__(/*! ./assets/minions.png */ "./assets/minions.png"),
+                },
+            ].map(({ alert, image }) => (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "w-full rounded", key: image },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", { style: getStyles(alert), src: image }))))),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: "my-0.5 text-center w-full flex flex-row justify-center min-[200px]:my-2" },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", { className: "nisbutton overflow-hidden", onClick: () => resetLines() },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: "px-0.5 text-xs min-[200px]:text-sm min-[200px]:px-2" },
+                        "Reset",
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", { className: "inline min-[240px]:hidden" }),
+                        " the rotation",
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", { className: "inline min-[320px]:hidden" }),
+                        " (alt+1)"))))));
 };
 
 
@@ -37661,6 +37763,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AGDeadLines": () => (/* binding */ AGDeadLines),
 /* harmony export */   "Ability": () => (/* binding */ Ability),
+/* harmony export */   "bossStartLine": () => (/* binding */ bossStartLine),
 /* harmony export */   "cannonLineFragments": () => (/* binding */ cannonLineFragments),
 /* harmony export */   "coreLineFragments": () => (/* binding */ coreLineFragments),
 /* harmony export */   "flurryLineFragments": () => (/* binding */ flurryLineFragments),
@@ -37701,6 +37804,8 @@ const minionLineFragments = [
     "Azzanadra: They give their",
     "Ariane: These glacytes",
     "Ariane: It uses energy",
+    "Ariane: You can't attack",
+    "The Arch-Glacor is immune",
 ];
 /**
  * Azzanadra: Run, World Guardian!
@@ -37717,6 +37822,7 @@ const pillarLineFragments = [
     "Azzanadra: Move!",
     "Ariane: Dodge the ice",
     "Ariane: The air grows colder",
+    "Ariane: From above!",
 ];
 /**
  * Ariane: It's that giant beam...
@@ -37733,6 +37839,7 @@ const cannonLineFragments = [
     "Azzanadra: Steel",
     "Ariane: It's charging!",
     "Azzanadra: Brace yourse",
+    "Ariane: What enormous",
 ];
 /**
   // Azzanadra: Prepare for a barrage!
@@ -37752,7 +37859,14 @@ const flurryLineFragments = [
     "Ariane: It's changing",
     "Ariane: It's switching",
 ];
-const AGDeadLines = ["received:", "charming imp", "Completion Time:"];
+// HM just adds "(HM)" after Arch-Glacor's name below.
+const bossStartLine = "Welcome to your session against: Arch-Glacor";
+const AGDeadLines = [
+    "received:",
+    "charming imp",
+    "Completion Time:",
+    "You have killed",
+];
 
 
 /***/ }),
@@ -37772,6 +37886,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _alt1_base__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @alt1/base */ "../node_modules/@alt1/base/dist/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _abilityLineMap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./abilityLineMap */ "./abilityLineMap.ts");
+
 
 
 
@@ -37790,6 +37906,7 @@ const getLatestLine = (lines) => lines
     const [lastActionedLine, setLastActionedLine] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)("");
     const [lines, setLines] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(new Set());
     const [chatInterval, setChatInterval] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)();
+    const findChatbox = () => { };
     // Set Chat reader with all textcolors etc.
     const chatboxReader = new _alt1_chatbox__WEBPACK_IMPORTED_MODULE_0__["default"]();
     chatboxReader.readargs = {
@@ -37816,6 +37933,7 @@ const getLatestLine = (lines) => lines
             /// AG Specific colors
             _alt1_base__WEBPACK_IMPORTED_MODULE_1__.mixColor(202, 51, 152),
             _alt1_base__WEBPACK_IMPORTED_MODULE_1__.mixColor(0, 153, 0),
+            _alt1_base__WEBPACK_IMPORTED_MODULE_1__.mixColor(235, 47, 47),
             _alt1_base__WEBPACK_IMPORTED_MODULE_1__.mixColor(45, 186, 20), // Completion Time
         ],
     };
@@ -37831,7 +37949,8 @@ const getLatestLine = (lines) => lines
                 var _a;
                 let newLines = (_a = chatboxReader.read()) !== null && _a !== void 0 ? _a : [];
                 //Filter out old / already actioned / and fragmanted lines
-                newLines = newLines.filter((newLine) => IsAfterTimestampedLine(lastActionedLine, newLine.text));
+                newLines = newLines.filter((newLine) => IsAfterTimestampedLine(lastActionedLine, newLine.text) ||
+                    newLine.text.includes(_abilityLineMap__WEBPACK_IMPORTED_MODULE_3__.bossStartLine));
                 if (newLines.length > 0 &&
                     newLines.some((newLine) => !lines.has(newLine.text))) {
                     setLines((prev) => new Set([...prev, ...newLines.map((line) => line.text)]));
@@ -37839,16 +37958,90 @@ const getLatestLine = (lines) => lines
             }, 600));
         }, 500);
     }, []);
-    return [
-        lines,
-        () => {
-            console.log("Resetting the active lines. Capturing this line as the Latest line: ", getLatestLine([...lines]));
-            setLastActionedLine(getLatestLine([...lines]));
-            setLines(new Set());
-        },
-    ];
+    const resetChat = (0,react__WEBPACK_IMPORTED_MODULE_2__.useCallback)(() => {
+        console.log("Resetting the active lines. Capturing this line as the Latest line: ", getLatestLine([...lines]));
+        setLastActionedLine(getLatestLine([...lines]));
+        setLines(new Set());
+    }, [lines]);
+    return [lines, resetChat];
 });
 
+
+/***/ }),
+
+/***/ "./useImageFinder.tsx":
+/*!****************************!*\
+  !*** ./useImageFinder.tsx ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _alt1_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @alt1/base */ "../node_modules/@alt1/base/dist/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
+    const [imageDetected, setImageDetected] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [activeInterval, setActiveInterval] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();
+    const imgs = _alt1_base__WEBPACK_IMPORTED_MODULE_0__.ImageDetect.webpackImages({
+        hoaryChill: __webpack_require__(/*! ./assets/hoaryChill.data.png */ "./assets/hoaryChill.data.png"),
+    });
+    const startInterval = () => {
+        return setInterval(() => {
+            //Short circuit this to stop trying to full capture if we know we already have chill.
+            //It'll get reset on the rotation or fight end.
+            if (!imageDetected &&
+                _alt1_base__WEBPACK_IMPORTED_MODULE_0__.captureHoldFullRs().findSubimage(imgs.hoaryChill).length > 0) {
+                setImageDetected(true);
+                if (activeInterval) {
+                    clearInterval(activeInterval);
+                }
+            }
+        }, 1000);
+    };
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+        const letImagesLoad = async () => {
+            await imgs.promise;
+        };
+        letImagesLoad();
+        //Start the initial interval
+        setActiveInterval(startInterval());
+    }, []);
+    /**
+     * This is called after an ability rotation and timeouts for a period in order to
+     * avoid a scenario where core was the last mechanic and the horary chill takes a second to
+     * wear off. This'll likely need to be dialed in.
+     */
+    const chillOut = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(() => {
+        //Reset this to prepare for the next rotation.
+        setImageDetected(false);
+        if (activeInterval) {
+            clearInterval(activeInterval);
+        }
+        //Someone asked us nicely to ..... chill out for a few seconds :)
+        console.log("Chilling out on checking for hoary");
+        setTimeout(() => {
+            setActiveInterval(startInterval());
+        }, 10000);
+    }, [activeInterval]);
+    return [imageDetected, chillOut];
+});
+
+
+/***/ }),
+
+/***/ "./assets/archGlacor.png":
+/*!*******************************!*\
+  !*** ./assets/archGlacor.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/archGlacor.png";
 
 /***/ }),
 
@@ -37872,6 +38065,16 @@ module.exports = __webpack_require__.p + "assets/core.png";
 
 /***/ }),
 
+/***/ "./assets/darkNilas.png":
+/*!******************************!*\
+  !*** ./assets/darkNilas.png ***!
+  \******************************/
+/***/ ((module) => {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAMAAAAFBf7qAAACc1BMVEX///8AAACLmL41od2RfZM1obU1n7Vnf8UynLUym7UymrUymbUymLUwktQyl7UwkdAwlbVUgrUwj8xTgbVTgLVTf7VTfrVRfrUtjMlRfbUqid0qidxRfLUti8Unid0gkcVQe7JQerInjbVOebAqhNQthMwgiNZOd68ki7Uch90kirVNdq0kibVNdawnhMIkgNwng8Ikh7VNdKoqgr0ngsQkhrUngcUnftQqgrUkhbVLc6gqgrFLc6cqgbUqgLogf9lLcqcqgLUqf7cqf7UkgrUchrUqfrUkgbUchbVJcaQqfbUchLUqfbRJcKNJb6Inf6Ygf7UgfrUcgLUgfbUcf7VHbaBHbZ8gfLUcfrUnd7gge7UcfbUcesAgerUcfLVGa5wgebUce7UcerocerUgd7UcebVGaZkgdrUgdbUcd7UcdrogdLUcdrUkdKlEZ5Ygc7UcdbUqbbUgcrUcdLUcc7gccrwgcbUcc7VCZpQccrYgcLUccrUccbpCZZMgb7Ukb6hCZJEkb6cXc7IXc7Ecb7UnabUnabQXcLVAYpAcbbUXb7UcbLVAYY5AYY0carwXb6sXbbUXbLUnZa4+YIoXa7UXarUXabUcapwXZ7U8XYcXZ7AXZbUkYaYgZZogZJggZJcgZJUcZZcgYpcXYbEkXaEXYLAXXasXXaoXXKkXXKgXWqcgV5cXWaQgVpQcWYQXVp8QV50XVJkXVJUXV4AgUIkQVJwcUIgQUZUcTnYcS4EcS3IQS4kcR3sXR4EXR4AXRn8cQnIQRnwQRHwXQmYXQG8XQGEQPnAQPG01LTcXNVwQMEsQLVAqJCoQJ0AcFxwAABAAAAJRg0VQAAAAAnRSTlMAAHaTzTgAAAHTSURBVHjaY2DECi4wMjIyYJc5cQGn1L4jF9CkLkDBoe3sWy4woEicX7fp3NnTJ4/vXr/YHFnqwpkF84+t2XBgz85tW5dOVUGSunCqsX77jOr9FSyr57ROycxGlsqNXDWj/GCDjXBVfkZCwgUGuNQFf+OV08pn9XiKVuWnJ8ReYGCEyV04bLdiWnHqZD9JkEwUyDSYzFGn5dOKU2eGKXTmp8eGg+2BSfksm1qc3BevLJidHhsMcQFE6oI179SC5Jo0bZH8lNjgFCSpCzv4pxQkl+QZiZWlRAVvhjobRF7YJTSlILGy1kGmLiUqcLr02gsIKYmJOYkhHb6KnRlRgQvnSk2CG3hBljknMaQ3VL07OzzQfZ6FKsLAC145iUEx8boiRbEB7otsuWEhBJLKjAvKWmIlXpYQ4G7myCmALJUc1FzaVtiSHuhi4sjFBw9WkNSE/qTZUydkBLsYOPNwIQIc7MImzant5VEuem58HEhRAdK1l2laV0Gqu6UbHxty1IKkNspNKE6OMI2LYEVJDyAp/cToiAjL7AsXUGQYGRgv2Feneru6xl1gYEBNXgwXqtWCXDV0PC5gpEgGxgse8kpappgyYLsuGF7AIgP2F8MFBmzpGwDcJLZqInVY1gAAAABJRU5ErkJggg=="
+
+/***/ }),
+
 /***/ "./assets/flurry.png":
 /*!***************************!*\
   !*** ./assets/flurry.png ***!
@@ -37879,6 +38082,36 @@ module.exports = __webpack_require__.p + "assets/core.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "assets/flurry.png";
+
+/***/ }),
+
+/***/ "./assets/frozenCoreOfLeng.png":
+/*!*************************************!*\
+  !*** ./assets/frozenCoreOfLeng.png ***!
+  \*************************************/
+/***/ ((module) => {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAZCAYAAAAv3j5gAAAESElEQVR42qxWA8wkXRB82dgv/M/cZJNJNtmcbdu2bdu28dm2bVtn2zbq73QnZ99NUqP3uqq6hurXFxO+jX+2COF/GRBkQrbZhJS3fy/6QSCNCFPf47+El4LEV/gv7hnhKWT7HP/FPMZ/UQ//RMwk5ElvhCz6ERMxQm9Dh97Cf+F38V/YHeiAK2gYBzSMBxqn4He6M7EAu4+4R4QE2uqga9B+lwgXoQOvQvtfRr1IoF74G9SLIqFosKgOvsFzfyJm4g44ijByHnKTCbXPOWivM9CepwQep1Av5AVsvvdh83+IesHP6fxpaO9zqBf6CjbPGz8SMn2ISIfckg48zzCpdquAdi2DdimFdiomFBHZTdi8bpPQIxlzK+d9w47m74r5iVDkfRHxOS/kQixwLIJ2KIDN+w5sHhTPsWzY/B6wqHYshNWNYtsRyef5HHX4DTGTRBV0naMhYibVdnlMwvvHc2H1uC6ERzJ5TEDnXSjevfHQziVixuced6u9z34pZoL2vyRO7PO5mJ2JEO9bXa8QIc05nE6iOdBHs1jQ6nyRj9nM4QyZ53aV5xHPN4TopAgIAe9zcTqsTucZ+nCajB/NlDkSk2z3J8FqfwZWh7O8/wF74kSMRTxOctsUGRN/iOZQKqx0ca2O53ifCVmIQON8fDAFxrGKD6AIBSRgHC6GeX3EByF2zkWHyPG+JBE6kATjaAWhnMl4nDohI4IDyURIZIeKYRwsZOidUXzXGYdLYezNhXl10IfoWEgcxELvjiGhRN43jpTB2JdHkV3kLsiEkO9L4NtXbwvjcWMvXZ9NAXQcLgJUx+fWecO80v8LobWe0Bv8oLeEQG8NpcmltA2RyCgmvjZ7E0COedyyNxuWPZmw7MqA3ujPdcahIgYZgN4cBMvONJiX+37jZljmAMv2ZM5V74yUi3owVTrcEclkRErk6Uxi2ZFC5nypq1wYBwq4jsyRSCDxpEg3U7d881nizCk+KirhLV1QcbzeB5atCUxg2UbxrfH8ICJdhHMXbGRzHGotcoMaswpq0NxvC3Fse3PZNXew0hV60XGYN0aDCAjxHLNldwaM/XmQmIJFYEcqzGtCUGvmYRJZCd2417dEWIjcJqHWYnfoufuo7a2gjLnYvIGiW03n11Fne7LEBN0A1Cl3Z14VgFqzj0GNWgE1cilUh8E/fNfx5Goj1vC21lJP7kavdGFCugH4hqG7SURXOJMRH1SbdgBq2CKosWugZ+xiMd1p7M8/E4xJG6GmbafO9kOvcpNrsuDwB9Ra7IFaC5w5IjVqOfTsPZyAbjUYukXfX//wqXFroSasp+LNJLoJ1SbvQbVxW1Bt1AZUG0ljI5eJmXFroPrPhGrTH6qaBUpXY5Hf+5QPW4X/uk+GatYdqt1gqE7DoPpMhRqxGKrDUChbG6haRK4UlP7vz39QPhTaWkE17ARVr52QfgWT4O8XE/4fXkwkAAA7OiUHl6SyFgAAAABJRU5ErkJggg=="
+
+/***/ }),
+
+/***/ "./assets/glacorCore.png":
+/*!*******************************!*\
+  !*** ./assets/glacorCore.png ***!
+  \*******************************/
+/***/ ((module) => {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAfCAYAAAAWRbZDAAAEM0lEQVR42mKAAECv9QAcWRaFAXgrZd+yzVW51ra9Y9sTp9KObdu2bdtOOrbt/HP7jD0vrDpxn6//q3fV8NbhfKiBXRGDQF4Hj53XhtTLH0zf4aBR3vjvC6juVqKgtgFM7g4mdT1IVA0ZE/PImlpEYv8YdOUKMANvMJHTQaBqYMdvInd+Dd7jS3Dpm0RYSgr8Y+PAFB5g2tb7ifImPx5B2tgc8hbW4T2xDNf+KSQPTiI4IQku/oEwtXcAu2W0X6gaSppaCctf3ODgCrzGlhC4CMR0DcAjvxQSn0DctrIDUzfbK8pf+Nd5VHf2ElawtAWfqTW0jo4hk89l+tgs/CrqOFoCqbc/mC5HNS0I3NNCqe0Z4NgmgpaAlpExZE8vIY1jSQMTiGxTIri2GdbRKThuaAOmZUng7tIduYqa7j7CCpe30TwyiuyZFaTzN5E8NIl45QiiOvoQUNYIu/hMnLFw2RV4H/viV1R1KFGnHODYFg1p7twqMicXkDIyDYOJVShGlyEfXuQpe+CYkgdNW1cOWhG4q4VSy9MVrexQQtWiMVsGTBcBk3nAeHYbRtObMClrQERrD1wziiBy8xUO0j9/9zdfKEpVMiotABbrgPkaYLYCgs0WOb7Aq7wR4a3d8C6thsI3jBaOUJBOEz6EPN02NFXYhgrjtfoAXLqfVAOAfvc4wls4WFIF9fB4MJm7EJD/4++n6UThENXL0nGMSrdtGGHNXZDnluGqVxCY2InAN8O++h13t6jRQ5BW55PpNPEYk/TNQLupn4OdEKXmCU+XNjgJ9R28NJ0mngZF3ROUTjWPOnFpYFI3Ael+Pgp1Skf1bDrCnwXjeoZg26yELLsEJ4JiwESOBL7RntMsU0IdoNIAAbRCOfgcJu2bo70YTuka4Jiey+fOmbA3Xijq26B6mE7SNo9Cvv8UwyuQDy1BNrgI2cACpP3zfO5mKZ1NUw98+Oo0i4oXNncWtW3I581ViXxm1jk2B2lMMUzzG2CSX8+xpYcYpdOJSMddvxj4VzXAMi4ZTNdWQLoPv0P2zDI8RhfgN7sJSessYZKYIsKMc+t41cIop4YwvZhsXHb0xdGSFtgkpoHpOQhLlz4+B8+xJfjPbz2CCMt7ABFWjbsB8RDF50M7PA3HKzrwu7UrXaSEbfJv/oJb9yzNl5QgXtGFVA9SEXTLJwo6kRn44a4l/rgtwQ8Kc7DrcuFHmGZ9D/QbxiFqnoJJVuODaiLsrn8sbnpH4rp7KDSCEvGXugzvfPMf3V929/j59QRu8Ya6NcPQqx+DURpPlF4H9cB43PaNxnW3EGiGJOGrK3K8/82RJ+dq9xcjdvwGJBmFMCyspkSqN3DDIxRH9Mzw4dEbeP/nEy973AgHqf69BHZJD5+d1saHR25Sc6rbxnyOZHTLfgNMGMpO3OLNpWA3FHj4uwO7TQtpfg/EAJyApqG+RQAAAABJRU5ErkJggg=="
+
+/***/ }),
+
+/***/ "./assets/lengArtefact.png":
+/*!*********************************!*\
+  !*** ./assets/lengArtefact.png ***!
+  \*********************************/
+/***/ ((module) => {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAdCAMAAAB2bwf0AAABWVBMVEX///8AAAAtMDDOvhCPzVCNy1CNy06MyU2+rxC9rhCCvk2CvU2CvE2BvE2BvEuBu0uAukt/uk1/uUt/uEt+t0l9tkl9tUl8tEl8s0d7skd7sUZ6sEZ5r0R5rkR6rUJ5rUR3rEZ8qjV1qURyqEdxqEdxp0dxpkdwpkZwpUZwpEZwpERzpDxvpEZyo0Bwo0Rvo0R2ojJvokRvoURtokRtoURtoERtoEJsoERsoEJtn0Jsn0JsnkJrnUJsnEJqnEZrnEBxnDBpnERrm0Bpm0RpmkRqmj5qmT5pmUBpmT58gIdml0JmlkBnljxnlTxllUB5fYRnlDxmkjplkjpikT51eoBpkC1lkDdkkDdikDx0eYBkjjdhjjxkjTVijTWKfxBhizVxdHtgiDJkhypdhjdafCdZeidXeidXeSdWdydTcSRRcCRZXWFZXGFQbSBXXGBOaiBJZiA3SxcAAAJKmO+6AAAAA3RSTlMAAO69xAuhAAABdklEQVR4AQXBu05UURQA0LXP3Y4w8pDBKKBRE2OhhYUfYGtI/AALG0sTm8OH3Ftb0NFb8gXSa2GhkfhIjBJAQSMjOHNdK4MK0AGQ1AmmKFUHkOoE4+07p81g9lqlA8mYt+PjV6tW/47nr6h0JMm9HT3fmsHVP/Mzc2onORxtPhr0CGWvHKzM6WuX2ES/RjQlMvaHo2nTZz1eZHe3RzREM5g9cWEj4fFr014oEYwYRpvwbtr3RFMiwyJIPNzTr4lANMsMSxsJkzO9iCaCRSCly1/7CUJkzJ8zLG1I+mK/hyKaZUobpAM7k6PpYVxqCrPnDUF29UtEROkPS7kZI0obSC6uf/g4XfgefG7uGgKpq79uLXxYWWK3zP1YKm1A0lVGzcnp2cKKmGsDJLq6dTrwRDLbBpConr5g6xnaACT1JdfX/dYSAAk3fh5ts77RAZB09d/7Nw98mmkDgASec78NACTAFABIdJXUBgAkuJ2tAAAJXW0DAPAfnw5wtzgVOHcAAAAASUVORK5CYII="
 
 /***/ }),
 
@@ -38037,6 +38270,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! !file-loader?name=[name].[ext]!./index.html */ "../node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./index.html");
 __webpack_require__(/*! !file-loader?name=[name].[ext]!./appconfig.json */ "../node_modules/file-loader/dist/cjs.js?name=[name].[ext]!./appconfig.json");
 __webpack_require__(/*! !file-loader?name=/assets/[name].[ext]!./assets/wenbook.png */ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/wenbook.png");
+__webpack_require__(/*! !file-loader?name=/assets/[name].[ext]!./assets/darkNilas.png */ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/darkNilas.png");
+__webpack_require__(/*! !file-loader?name=/assets/[name].[ext]!./assets/glacorCore.png */ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/glacorCore.png");
+__webpack_require__(/*! !file-loader?name=/assets/[name].[ext]!./assets/frozenCoreOfLeng.png */ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/frozenCoreOfLeng.png");
+__webpack_require__(/*! !file-loader?name=/assets/[name].[ext]!./assets/lengArtefact.png */ "../node_modules/file-loader/dist/cjs.js?name=/assets/[name].[ext]!./assets/lengArtefact.png");
 var output = document.getElementById("output");
 //loads all images as raw pixel data async, images have to be saved as *.data.png
 //this also takes care of metadata headers in the image that make browser load the image
