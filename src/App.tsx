@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   AGDeadLines,
   bossStartLine,
@@ -116,12 +116,15 @@ export const App: React.FC = () => {
     alt1.clearTooltip();
   }, [cannonIsLastAbility]);
 
-  const rewards = [
-    require("./assets/frozenCoreOfLeng.png"),
-    require("./assets/darkNilas.png"),
-    require("./assets/glacorCore.png"),
-    require("./assets/lengArtefact.png"),
-  ];
+  const rewardImage = useMemo(() => {
+    const possibleRewards = [
+      require("./assets/frozenCoreOfLeng.png"),
+      require("./assets/darkNilas.png"),
+      require("./assets/glacorCore.png"),
+      require("./assets/lengArtefact.png"),
+    ];
+    return possibleRewards[Math.floor(Math.random() * possibleRewards.length)];
+  }, [inBossEncounter]);
 
   console.log("inBossEncounter:", inBossEncounter);
 
@@ -133,10 +136,7 @@ export const App: React.FC = () => {
         }`}
       >
         <span>Great kill!</span>
-        <img
-          className="h-4/5 ml-3"
-          src={rewards[Math.floor(Math.random() * rewards.length)]}
-        />
+        <img className="h-4/5 ml-3" src={rewardImage} />
       </div>
 
       <div

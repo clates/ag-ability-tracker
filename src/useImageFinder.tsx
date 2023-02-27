@@ -50,7 +50,7 @@ export default (): [boolean, () => void] => {
     console.log("Chilling out on checking for hoary");
     setTimeout(() => {
       setActiveInterval(startInterval());
-    }, 10000);
+    }, 30000);
   }, [activeInterval]);
 
   return [imageDetected, chillOut];
