@@ -38,6 +38,8 @@ export const minionLineFragments = [
   "Azzanadra: They give their",
   "Ariane: These glacytes",
   "Ariane: It uses energy",
+  "Ariane: You can't attack",
+  "The Arch-Glacor is immune",
 ];
 
 /**
@@ -55,6 +57,7 @@ export const pillarLineFragments = [
   "Azzanadra: Move!",
   "Ariane: Dodge the ice",
   "Ariane: The air grows colder",
+  "Ariane: From above!",
 ];
 
 /**
@@ -72,6 +75,7 @@ export const cannonLineFragments = [
   "Azzanadra: Steel",
   "Ariane: It's charging!",
   "Azzanadra: Brace yourse",
+  "Ariane: What enormous",
 ];
 
 /**
@@ -93,4 +97,12 @@ export const flurryLineFragments = [
   "Ariane: It's switching",
 ];
 
-export const AGDeadLines = ["received:", "charming imp", "Completion Time:"];
+// HM just adds "(HM)" after Arch-Glacor's name below.
+export const bossStartLine = "Welcome to your session against: Arch-Glacor";
+
+export const AGDeadLines = [
+  "received:",
+  "charming imp",
+  "Completion Time:",
+  "You have killed",
+];

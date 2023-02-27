@@ -1,6 +1,7 @@
 import ChatboxReader from "@alt1/chatbox";
 import * as a1lib from "@alt1/base";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { bossStartLine } from "./abilityLineMap";
 
 const timeStampPattern = /\[\d\d:\d\d:\d\d\]/;
 
@@ -24,6 +25,8 @@ export default (): [Set<string>, () => void] => {
   const [lastActionedLine, setLastActionedLine] = useState<string>("");
   const [lines, setLines] = useState<Set<string>>(new Set<string>());
   const [chatInterval, setChatInterval] = useState<NodeJS.Timeout>();
+
+  const findChatbox = () => {};
 
   // Set Chat reader with all textcolors etc.
   const chatboxReader = new ChatboxReader();
@@ -52,6 +55,7 @@ export default (): [Set<string>, () => void] => {
       /// AG Specific colors
       a1lib.mixColor(202, 51, 152), // Azzandra
       a1lib.mixColor(0, 153, 0), // Ariane
+      a1lib.mixColor(235, 47, 47), // Completion Time
       a1lib.mixColor(45, 186, 20), // Completion Time
     ],
   };
@@ -70,8 +74,10 @@ export default (): [Set<string>, () => void] => {
           let newLines = chatboxReader.read() ?? [];
 
           //Filter out old / already actioned / and fragmanted lines
-          newLines = newLines.filter((newLine) =>
-            IsAfterTimestampedLine(lastActionedLine, newLine.text)
+          newLines = newLines.filter(
+            (newLine) =>
+              IsAfterTimestampedLine(lastActionedLine, newLine.text) ||
+              newLine.text.includes(bossStartLine)
           );
 
           if (
@@ -87,15 +93,14 @@ export default (): [Set<string>, () => void] => {
     }, 500);
   }, []);
 
-  return [
-    lines,
-    () => {
-      console.log(
-        "Resetting the active lines. Capturing this line as the Latest line: ",
-        getLatestLine([...lines])
-      );
-      setLastActionedLine(getLatestLine([...lines]));
-      setLines(new Set<string>());
-    },
-  ];
+  const resetChat = useCallback(() => {
+    console.log(
+      "Resetting the active lines. Capturing this line as the Latest line: ",
+      getLatestLine([...lines])
+    );
+    setLastActionedLine(getLatestLine([...lines]));
+    setLines(new Set<string>());
+  }, [lines]);
+
+  return [lines, resetChat];
 };

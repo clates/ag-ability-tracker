@@ -7,6 +7,10 @@ import { ImgRef } from "@alt1/base";
 require("!file-loader?name=[name].[ext]!./index.html");
 require("!file-loader?name=[name].[ext]!./appconfig.json");
 require("!file-loader?name=/assets/[name].[ext]!./assets/wenbook.png");
+require("!file-loader?name=/assets/[name].[ext]!./assets/darkNilas.png");
+require("!file-loader?name=/assets/[name].[ext]!./assets/glacorCore.png");
+require("!file-loader?name=/assets/[name].[ext]!./assets/frozenCoreOfLeng.png");
+require("!file-loader?name=/assets/[name].[ext]!./assets/lengArtefact.png");
 
 var output = document.getElementById("output");
 
