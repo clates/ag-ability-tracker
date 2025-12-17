@@ -66,6 +66,7 @@ The built files will be output to the `./build/` directory.
 
 ### Project Structure
 
+- `src/index.tsx` - Application entry point
 - `src/App.tsx` - Main React component with game logic
 - `src/abilityLineMap.ts` - Chat message fragments for ability detection
 - `src/useChat.tsx` - Custom hook for reading chat messages
